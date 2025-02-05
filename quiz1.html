@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요즘 어휘력</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        document.oncontextmenu = function(){return false;}
+    </script>
+        <style>
+            body {
+                background: url('img/background.jpg') no-repeat center/cover;
+                overflow: hidden;
+            }
+        </style>
+</head>
+<body>
+    <oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div class="wrap">
+        <header>
+            <div class="mcon">
+                <div class="mcon1">
+                    <a href="understand.html"><span class="material-symbols-rounded">arrow_back_ios_new</span></a>
+                </div>
+                <div class="mcon1">
+                    <a href="main.html"><span class="material-symbols-rounded">home</span></a>
+                </div>
+            </div>
+            <div class="logo">맞추다</div>
+            <div class="toggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!--요즘어휘력 설명 햄버거-->
+
+        <div class="navbackground"></div>
+        <div class="nav">
+            <div class="nav__content">
+                <div class="nav__locations">
+                </div>
+                <div class="nav_con">
+                    <div class="project_intro">
+                        <h1 class="project_title">기획의도</h1>
+                        <p class="project_con">
+                        최근 인터넷에서 젊은 층을 중심으로 ‘심심한 사과’, ‘무료하다’, ‘연세’ 등의 한자어를 모르는,
+                        <br>세대 간 언어 소통 문제가 논란이 되었고, 다양한 형태의 뉴미디어의 등장으로 인해 정보 습득 방법,
+                        <br>현저히 떨어지는 독서량 등의 문제를 가져왔다. 한자어의 필요성을 느끼지 못하는 젊은 층을
+                        <br>중심으로 문해력이 심각한 문제로 대두되어 있어 이를 인지할 필요가 있다.
+                        <br>
+                        <br><span style="color: #06da0d; font-weight: bold;">요즘 어휘력</span>프로젝트에서는 어휘력 퀴즈인 '맞추다'와 책 추천 '학습하다'를 통해, 
+                        <br>젊은 층이 잘 모르는 단어에 더 친숙하게 접근하고자 한다. 
+                        </p>
+                    </div>
+                    <div class="project_next"><img src="img/next_pic.png"></div>
+                    <div class="project_test_fin">
+                        <h1 class="project_title">문해력 실험 설문조사 결과</h1>
+                        <p class="projcet_title2">(기간  :  2021년 2월 13일 - 3월 13일 / 대상 : 성인 883명 / 단위 : %)</p>
+                        <div class="project_test">
+                            <div class="project_test_pic">
+                                <div class="projectpic"><img src="img/project_pic1.png"></div>
+                                <div class="projectpic"><img src="img/project_pic2.png"></div>
+                            </div>
+                            <div class="project_test_pic">
+                                <div class="projectpic"><img src="img/project_pic3.png"></div>
+                                <div class="projectpic"><img src="img/project_pic4.png"></div>
+                            </div>
+                        </div> 
+                    </div>
+                    <p class="project_fin">
+                        상단의 그래프는 2021년, TV에서 방영한 ‘EBS 당신의 문해력’ 중 성인 2030세대 883명을 대상으로 설문 조사를 진행한 결과이다.
+                        <br>어휘력과 문해력 실태를 확인하고자 시행한 실험 결과에 따르면 응시자들은 11문제 중 평균 6개 정도의 정답을 맞췄고,
+                        <br>이들의 종합적인 평균 점수는 54점으로 집계되었다. 이들 중 글을 읽고 '의견 작성시 어려움을 느낀 적이 있다'에
+                        <br>72.6%가 '그런적이 있다'고 대답했고 '사회 생활시 문해력이 필요하다'에 87.9%로 가장 많은 사람들이 '그렇다'라고 대답했다.
+                        <br>30.7%의 응시자들이 '일상소통 불가'로 인해 '문해력이 필요하다'고 말했고, '문해력 향상'에 독서가 가장 필요한 것으로는 나타났다.
+                        <br>
+                        <br>이에 따라, 현대인의 어휘력에 문제가 있음을 알리고 부족한 어휘력의 심각성을 알리고자 한다. 
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="quizcontent">
+            <div class="question">
+                <div class="qtitle">질문<span id="number">1</span></div>
+                <div class="qtext" id="qtext"></div>
+            </div>
+            <div class="btn" id="btn">
+                <button class="btn1" onclick="selectAnswer('O')">
+                    <span class="material-symbols-rounded">circle</span>
+                </button>
+                <button class="btn1" onclick="selectAnswer('X')">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+            <button id="resultbtn" onclick="checkAnswers()">결과 확인</button>
+            <div class="resultcon">
+                <div class="reinner">
+                    <div id="result" class="result"></div>
+                    <div id="detailed-result" class="result_box" style="display: none;"></div>    
+                </div>
+                <button class="btnclose">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js'></script>
+    <script src="menuscript.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+    <script>
+        $('.hamburger').click(function(){
+            $(this).toggleClass('active');
+        });
+
+        const questions = [
+            { text: "무료하다는 '부끄럽고 열없다.'이다.", answer: 'O', explanation: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'무료하다'는 없을 무(無)와 귀울 료(聊)로, 흥미있는 일이 없어 심심하고 지루하다는 의미를 가지고 있습니다." },
+            { text: "금일은 '금요일'이다", answer: 'X', explanation: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'금일'은 이제 금(今)과 날 일(日)로, 지금 지나가고 있는 이날, 오늘이라는 의미를 가지고 있습니다."},
+            { text: "쾌청하다는 '구름 한 점 없이 상쾌하도록 날씨가 맑다.'이다.", answer: 'O', explanation: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'쾌청하다'는 쾌할 쾌(快)와 갤 청(晴)으로, 구름 한 점 없이 상쾌하도록 날씨가 맑다라는 의미를 가지고 있습니다." },
+            { text: "사흘은 '3일'이다", answer: 'O', explanation: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'사흘'은 순우리말로, 3일이라는 의미를 가지고 있습니다." },
+            { text: "가제는 '임시로 붙인 제목'이다.", answer: 'O', explanation: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'가제'는 거짓 가(假)와 제목 제(題)로, 임시로 붙인 제목이라는 의미를 가지고 있습니다." },
+            { text: "유선은 '전선이 없는 통신 방식'이다.", answer: 'X', explanation: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'유선'은 있을 유(有)와 줄 선(線)으로, 전선에 의한 통신 방식이라는 의미를 가지고 있습니다." },
+            { text: "구직은 '일정한 직업을 찾지 못함'이다.", answer: 'X', explanation: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'구직'은 구할 구(求)와 직분 직(職)으로, 일정한 직업을 찾음이라는 의미를 가지고 있습니다." }
+        ];
+
+        let currentQuestionIndex = 0;
+        let userAnswers = Array(questions.length).fill(null);
+        const questionText = document.getElementById('qtext');
+        const questionHeader = document.querySelector('.qtitle');
+        const questionNumber = document.getElementById('number');
+        const resultBtn = document.getElementById('resultbtn');
+        const detailedResult = document.getElementById('detailed-result');
+        const btnContainer = document.getElementById('btn');
+
+        function showQuestion() {
+            questionText.innerText = questions[currentQuestionIndex].text;
+            questionNumber.innerText = currentQuestionIndex + 1;
+        }
+
+        function selectAnswer(answer) {
+            userAnswers[currentQuestionIndex] = answer;
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                showQuestion();
+            } else {
+                questionHeader.style.display = 'none';
+                questionText.innerText = "퀴즈가 끝났습니다!";
+                btnContainer.style.display = 'none'; // 버튼 컨테이너 숨김
+                resultBtn.style.display = "block"; // 결과 확인 버튼 보이도록 설정
+                btnContainer.classList.add('hide');
+            }
+        }
+
+        function checkAnswers() {
+            let correct = 0;
+            let incorrect = 0;
+            let resultHTML = "<h3>결과 상세</h3>";
+            
+            userAnswers.forEach((answer, index) => {
+                if (answer === questions[index].answer) {
+                    correct++;
+                    resultHTML += `<p class="extext"><span class="material-symbols-rounded">
+fiber_manual_record
+</span> ${index + 1}. ${questions[index].text} - 정답 (${questions[index].answer})<br>
+                                   <span class='explanation'>${questions[index].explanation}</span></p>`;
+                } else {
+                    incorrect++;
+                    resultHTML += `<p class="extext2"><span class="material-symbols-rounded">
+close
+</span> ${index + 1}. ${questions[index].text} - 오답 (당신의 답: ${answer}, 정답: ${questions[index].answer})<br>
+                                   <span class='explanation'>${questions[index].explanation}</span></p>`;
+                }
+            });
+            
+            document.getElementById('result').innerText = `맞은 개수: ${correct}개, 틀린 개수: ${incorrect}개`;
+            detailedResult.innerHTML = resultHTML;
+            detailedResult.style.display = "block";
+        }
+
+        showQuestion();
+
+        $('#resultbtn').click(function(){
+            $('.resultcon').show();
+        })
+
+        $('.btnclose').click(function(){
+            $('.resultcon').hide();
+        })
+    </script>
+</body>
