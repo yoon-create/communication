@@ -8,8 +8,8 @@ const spacing = 0.4,    // 카드 간의 간격 (스태거)
 	seamlessLoop = buildSeamlessLoop(cards, spacing),
 	scrub = gsap.to(seamlessLoop, { // seamlessLoop의 재생 헤드를 부드럽게 스크럽하는 트윈을 재사용
 		totalTime: 0,
-		duration: 0.8,
-		ease: "power3",
+		duration: 1,
+		ease: "power3.easeOut",
 		paused: true
 	}),
 	trigger = ScrollTrigger.create({
@@ -25,8 +25,7 @@ const spacing = 0.4,    // 카드 간의 간격 (스태거)
 				self.wrapping = false;
 			}
 		},
-		end: "+=3000",
-		pin: ".gallery"
+		end: "+=3000"
 	});
 
 function wrapForward(trigger) { // ScrollTrigger가 끝에 도달하면, 처음으로 돌아가며 부드럽게 루프
@@ -68,7 +67,7 @@ function buildSeamlessLoop(items, spacing) {
 		startTime = items.length * spacing + 0.5, // seamless 루프가 시작될 때의 rawSequence에서의 시간
 		loopTime = (items.length + overlap) * spacing + 1, // 루프가 끝날 때의 시간
 		rawSequence = gsap.timeline({paused: true}), // 실제 애니메이션이 들어있는 곳
-		seamlessLoop = gsap.timeline({ // 이곳은 rawSequence의 재생 헤드를 스크럽하여 무한 루프처럼 보이게 만든다.
+		seamlessLoop = gsap.timeline({ // 이곳은 rawSequence의 재생 헤드를 스크럽하여 무한 루프처럼 보이게 만듦
 			paused: true,
 			repeat: -1, // 무한 스크롤/루프를 위해
 			onRepeat() { // 아주 드문 버그를 해결하기 위한 코드 (GSAP 3.6.1에서 해결됨)

@@ -20,16 +20,13 @@ const hamburgerAnimation = hamburger => {
     
     tl.to(lineOne, {
         duration: 0.2,
-        rotation: '-45deg',
-        x: '-9px',
-        y: '6px',
+
     }).to(lineTwo, {
         duration: 0.2,
         opacity: 0,
     }).to(lineThree, {
         duration: 0.2,
-        x: '-11px',
-        y: '-8px',
+
     }, '-=0.2')
     
     return tl;
