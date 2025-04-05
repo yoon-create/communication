@@ -130,13 +130,31 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js'></script>
     <script src="menuscript.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
-    <script src="imgscript.js"></script>
 
     <script>
         $('.hamburger').click(function(){
             $(this).toggleClass('active');
         });
+
+        $(function () {
+    const $cards = $('.cards li');
+    let current = 0;
+
+    // 초기 상태
+    $cards.hide().eq(current).show();
+
+    $('.next').on('click', function () {
+        $cards.eq(current).fadeOut(300); // 현재 슬라이드 숨김
+        current = (current + 1) % $cards.length;
+        $cards.eq(current).fadeIn(300); // 다음 슬라이드 표시
+    });
+
+    $('.before').on('click', function () {
+        $cards.eq(current).fadeOut(300);
+        current = (current - 1 + $cards.length) % $cards.length;
+        $cards.eq(current).fadeIn(300);
+    });
+});
     </script>
     </oncontextmenu>
     </body>
