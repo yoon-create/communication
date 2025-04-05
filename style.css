@@ -645,7 +645,6 @@ header {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-    margin: auto;
     background: #00ff08;
     color: #040404;
     font-size: 20px;
@@ -653,10 +652,7 @@ header {
     border-radius: 30px;
     font-weight: bold;
     margin-top: 20px;
-}
-#resultbtn:hover {
-    background: #00ff08;
-    color: #030303;
+    border: 0;
 }
 
 .resultcon {
