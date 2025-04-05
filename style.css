@@ -461,6 +461,13 @@ header {
     gap: 40px;
     padding-bottom: 50px;
 }
+.newsconbg {
+    position: absolute;
+    top: 0;
+}
+.newsconbg img {
+    position: fixed;
+}
 .newsleft, .newscenter, .newsright {
     position: relative;
     width: 400px;
