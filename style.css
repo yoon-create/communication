@@ -239,7 +239,7 @@ header {
 }
 .logo {
     font-size: 26px;
-    font-family: 'Hahmlet';
+    font-family: 'hahmlet-bold';
     position: relative;
     z-index: 1;
     color: #030303;
@@ -358,7 +358,7 @@ header {
     margin: auto;
     text-align: center;
     font-size: 34px;
-    font-family: 'Hahmlet';
+    font-family: 'hahmlet-bold';
     font-weight: 700;
     letter-spacing: 6.8px;
     line-height: 76px;
