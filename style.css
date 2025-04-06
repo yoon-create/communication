@@ -49,6 +49,7 @@ body {
     color: #ffffff;
     position: relative;
     width: 100vw;
+    height: 100%;
     -ms-overflow-style: none;
     font-family: 'Pretendard-Regular';
 }
@@ -75,7 +76,7 @@ body {
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 136px;
+    font-size: 8.5rem;
     font-family: 'hahmlet-bold';
     letter-spacing: 10px;
     text-align: center;
@@ -147,7 +148,7 @@ body {
 .mtext > p, .projectgo > p {
     font-family: 'hahmlet-bold';
     font-weight: 100;
-    font-size: 19px;
+    font-size: 1.1875rem;
     line-height: 10px;
     text-align: center;
     margin-left: 10px;
@@ -155,7 +156,7 @@ body {
 }
 .mainbtn  button  .material-symbols-rounded{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.5rem;
     vertical-align:baseline;
     margin-left: 6px;
 }
@@ -164,7 +165,7 @@ body {
     margin: auto;
     text-align: center;
     padding-bottom: 130px;
-    font-size: 17px;
+    font-size: 1.0625rem;
     width: 80%;
     height: 100%;
     overflow-y: scroll;
@@ -178,11 +179,11 @@ body {
     display: none;
   }
 h1 {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 30px 0;
 }
 .project_con {
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 30px;
 }
 .project_next > img {
@@ -195,7 +196,7 @@ h1 {
     padding-bottom: 10px;
 }
 .project_test_fin > .project_title2  > p {
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 200;
     margin-bottom: 30px;
 }
@@ -211,7 +212,7 @@ h1 {
     width: 46%;
 }
 .project_fin {
-    font-size: 17px;
+    font-size: 1.0625rem;
     line-height: 30px;
 }
 /*헤더*/
@@ -233,13 +234,13 @@ header {
     z-index: 5;
  }
 .mcon1 .material-symbols-rounded {
-    font-size: 35px;
+    font-size: 2.1875rem;
     padding: 10px;
     font-weight: 300;
     color: #ffffff;
 }
 .logo {
-    font-size: 26px;
+    font-size: 1.625rem;
     font-family: 'hahmlet-bold';
     position: relative;
     z-index: 1;
@@ -358,7 +359,7 @@ header {
     width: 100%;
     margin: auto;
     text-align: center;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-family: 'hahmlet-bold';
     letter-spacing: 6.8px;
     line-height: 76px;
@@ -409,7 +410,7 @@ header {
     height: 512px;
     line-height: 35px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Pretendard';
     font-weight: 300;
     color:#ffffff;
@@ -439,7 +440,7 @@ header {
 }
 .action button .material-symbols-rounded {
     color: #ffffff;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 .action button .material-symbols-rounded:hover {
     color: #00ff08;
@@ -460,6 +461,9 @@ header {
     justify-content: center;
     gap: 40px;
     padding-bottom: 50px;
+}
+.newscon_con {
+    padding-bottom: 70px;
 }
 .newsconbg {
     position: absolute;
@@ -487,29 +491,27 @@ header {
     filter: brightness(0.4);
 }
 .newstype2 {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: 'hahmlet-m';
     color: #00ff08;
     margin-top: 15px;
 }
 .newstitle {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 27px;
     margin-top: 5px;
 }
 .newsday {
     position: absolute;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     right: 0px;
     bottom: 0;
 }
-.newscon_con {
-    padding-bottom: 70px;
-}
+
 .up a .material-symbols-rounded {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 300;
     background: #000000bd;
     border-radius: 30px;
@@ -545,7 +547,7 @@ header {
     line-height: 50px;
 }
 .quizcon > h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'hahmlet-bold';
 }
 .quiz {
@@ -553,7 +555,7 @@ header {
     width: 420px;
     padding: 10px 0;
     border-radius: 40px;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
     color: #ffffff;
     border: 2px solid #00ff08;
@@ -583,7 +585,7 @@ header {
     text-align: center;
     align-items: center;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 1.25rem;
     border: 2px solid #00ff08;
     font-family: 'hahmlet-bold';
     letter-spacing: 2px;
@@ -596,7 +598,7 @@ header {
     width: 200px;
     height: 35px;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 400;
     bottom: 60%;
     left: 50%;
@@ -610,7 +612,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 100%;
     text-align: center;
     font-weight: 700;
@@ -632,7 +634,7 @@ header {
     border-radius: 20px;
 } 
 .btn1 > .material-symbols-rounded {
-    font-size: 150px;
+    font-size: 9.375rem;
     font-weight: 500;
 }
 .btn1:hover {
@@ -647,7 +649,7 @@ header {
     cursor: pointer;
     background: #00ff08;
     color: #040404;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 7px 50px;
     border-radius: 30px;
     font-weight: bold;
@@ -678,14 +680,14 @@ header {
 }
 .result {
     padding-bottom: 18px;
-    font-size: 20px;
+    font-size:1.25rem;
     text-align: left;
     font-family: 'hahmlet-bold';
 }
 .result_box {
 
     line-height: 30px;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left;
     margin: auto;
 }
@@ -699,7 +701,7 @@ header {
     
 }
 .btnclose > .material-symbols-rounded {
-    font-size: 46px;
+    font-size: 2.875rem;
     
 }
 .extext {
@@ -709,14 +711,14 @@ header {
 .extext >.material-symbols-rounded {
     color: #00ff08;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 1.875rem;
     vertical-align: middle;
     padding-bottom: 4px;
 }
 .extext2 >.material-symbols-rounded {
     color: #ff0000;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.875rem;
     vertical-align: middle;
     padding-bottom: 4px;
 }
@@ -734,7 +736,6 @@ header {
     width: 1300px;
     white-space: nowrap;
     scroll-behavior: smooth;
-    
 }
 
 .bookcon::-webkit-scrollbar {
@@ -780,7 +781,7 @@ header {
     width: 90px;
     height: 100%;
     font-family: 'hahmlet-bold';
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 90px;
     writing-mode: vertical-rl;
     padding-top: 30px;
@@ -792,7 +793,7 @@ header {
     left: 0;
     bottom: 10px;
     font-family: "hahmlet-m";
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 90px;
     writing-mode: vertical-rl;
     z-index: 2;
@@ -851,16 +852,16 @@ header {
     font-size: 25px;
 } 
 .bname {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .bookshort {
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 .bookstory {
-    font-size: 17px;
+    font-size: 1.5625rem;
     line-height: 30px;
     font-weight: 400;
     padding-bottom: 25px;
@@ -868,7 +869,7 @@ header {
     overflow-y: scroll;
 }
 .storyt {
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: 800;
     padding-bottom: 5px;
 }
@@ -876,29 +877,16 @@ header {
     text-orientation: upright;
 }
 
-.notice_port {
-    color: #bfbfbf;
-    font-size: 14px;
-    font-weight: 500;
-    position: absolute;
-    text-align: center;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 0;
-    line-height: 20px;
-}
-.notice_port_2 {
+.notice_port{
     position: fixed;
     color: #bfbfbf;
-    font-size: 14px;
-    font-family: 900;
-    width: 100%;
-    bottom: 0;
-    background: #000000bd;
-    padding: 10px 0;
+    font-size: 0.875rem;
     text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
+    font-weight: 500;
+    bottom: 0;
     line-height: 20px;
+    width: 100%;
+    background: #ff3434bd;
+    border: 1px rgba(255, 50, 50, 0.741);
+    text-align: center;
 }
