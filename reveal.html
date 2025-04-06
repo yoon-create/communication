@@ -37,12 +37,12 @@
 
         <!--요즘어휘력 설명 햄버거-->
 
+        <div class="navbackground"></div>
         <div class="nav">
             <div class="nav__content">
                 <div class="nav__locations">
                 </div>
                 <div class="nav_con">
-                    <div class="navbackground"></div>
                     <div class="project_intro">
                         <h1 class="project_title">기획의도</h1>
                         <p class="project_con">
@@ -132,46 +132,30 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
     <script>
-$(document).ready(function(){
-            // 버튼 클릭 시 동작
-            $('.material-symbols-rounded').click(function(){
-                var inside = $('.inside');
-                var mainbox = $('.mainbox');
-                var maintext = $('.maintext');
-                
-                if (inside.is(':visible')) {
-                    // 'inside' 숨기기
-                    inside.slideUp();
-                    maintext.fadeIn(); // maintext 다시 보이게
-                    $(this).text('expand_more');
-                } else {
-                    // 'inside' 보이기
-                    inside.slideDown();
-                    maintext.fadeOut(); // maintext 숨기기
-                    $(this).text('expand_less');
-                }
-            });
+        $('.hamburger').click(function(){
+            $(this).toggleClass('active');
         });
 
         $(function () {
-    const $cards = $('.cards li');
-    let current = 0;
+            const $cards = $('.cards li');
+            let current = 0;
 
-    // 초기 상태
-    $cards.hide().eq(current).show();
+            // 초기 상태
+            $cards.hide().eq(current).show();
 
-    $('.next').on('click', function () {
-        $cards.eq(current).fadeOut(300); // 현재 슬라이드 숨김
-        current = (current + 1) % $cards.length;
-        $cards.eq(current).fadeIn(300); // 다음 슬라이드 표시
-    });
+            $('.next').on('click', function () {
+                $cards.eq(current).fadeOut(300); // 현재 슬라이드 숨김
+                current = (current + 1) % $cards.length;
+                $cards.eq(current).fadeIn(300); // 다음 슬라이드 표시
+            });
 
-    $('.before').on('click', function () {
-        $cards.eq(current).fadeOut(300);
-        current = (current - 1 + $cards.length) % $cards.length;
-        $cards.eq(current).fadeIn(300);
-    });
-});
+            $('.before').on('click', function () {
+                $cards.eq(current).fadeOut(300);
+                current = (current - 1 + $cards.length) % $cards.length;
+                $cards.eq(current).fadeIn(300);
+            });
+        });
     </script>
-    </oncontextmenu>
+
     </body>
+    </html>
