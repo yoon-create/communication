@@ -2,436 +2,107 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>말레피센트2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>언어불통</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <meta property="og:image" content="img/background.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        body {
+            background: url('img/background.jpg') no-repeat center/cover;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
-
     <div class="wrap">
-        <div class="innertop">
-            <div class="bg">
-                <div class="logoimg">
-                    <img src="img/logo.png" alt="말레피센트2">
-                </div>
-                <header>
-                    <div class="headerinner">
-                        <div class="logo"><h1>MALEFICENT</h1></div>
-                        <div id="menu-toggle">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div id="menucon">
-                            <div class="menu-all">
-                                <div class="menu">
-                                    <li><a href="#sinopsis">SINOPSIS</a></li>
-                                    <li><a href="#trailer">TRAILER</a></li>
-                                    <li><a href="#character">CHARACTER</a></li>
-                                    <li><a href="#gallery">GALLERY</a></li>
-                                    <li><a href="#event">EVENT</a></li>
-                                    <li><a href="#soundtrack">SOUND&nbsp;TRACK</a></li>
-                                </div>
-                                <div class="menu2">
-                                    <li><a href="#">TICKET</a></li>
-                                    <li><a href="#"><img src="img/face.png" alt="패이스북"></a></li>
-                                    <li><a href="#"><img src="img/insta.png" alt="인스타그램"></a></li>
-                                    <li><a href="#"><img src="img/twitter.png" alt="트위터"></a></li>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-            </div>
-            <div class="down">
-                <p>SLIDE DOWN</p>
-                <span class="material-symbols-rounded">
-                    keyboard_arrow_down
-                </span>
-            </div>
-        </div>
-        <div class="innercon">
-            <div id="sinopsis">
-                <div class="sinopsisbg">
-                    <img src="img/sinopsis.png" alt="시놉시스 배경">
-                </div>
-                <div class="maleimg"><img src="img/maleimg.png" alt="말레피센트 뿔"></div>
-                <h2>SINOPSIS</h2>
-                <h3>동화는 끝났다&#33;<br>두 세계의 운명을 건 가장 사악한 전쟁이 시작된다&#33;</h3>
-                <p>
-                    오로라 공주는 필립 왕자의 청혼을 받고,<br class="mobile"> 왕자의 어머니인 잉그리스 왕비는<br class="mobile"> 말레피센트와 공주를 저녁 식사에 초대한다.
-                    <br class="mobile"><br>하지만 갑자기 왕이 쓰러지고,<br class="mobile"> 이 모든 것을 말레피센트의 탓이라고 큰소리치는<br class="mobile"> 왕비는 이내 그녀를 체포하라고 명령을 내린다. 
-                    <br class="mobile"><br>말레피센트가 자신의 정체성을 회복하는 한편<br class="mobile">왕비는 요정들을 학살할 무시무시한 계획을 세우는데,
-                    <br class="mobile"><br>이에 오래 유지된 인간과 요정의 연합이 깨져 거대한 전쟁이 시작된다.
-                </p>
-            </div>
-            <div id="trailer">
-                <video src="mp4/traler.mp4" poster="img/trailer.jpg" width="100%" controls muted></video>
-
-            </div>
-            <div id="character">
-                <div class="maleimg"><img src="img/maleimg.png" alt="말레피센트 뿔"></div>
-                <h2>CHARACTER</h2>
-                <div class="character">
-                    <div class="charactercon">
-                        <!--웹사진-->
-                        <div class="characterimg-w">
-                            <img src="img/maleficent.jpg" alt="말레피센트">
-                        </div>
-                        <!--모바일사진-->
-                        <div class="characterimg-m">
-                            <img src="img/maleficentm.jpg" alt="말레피센트">
-                        </div>
-                        <div class="c-info">
-                            <div class="c-infobg">
-                                <div class="infocon">
-                                    <blockquote>“사랑의 결말이<br>늘 아름답지는 않아,<br>꼬마 괴물.”</blockquote>
-                                    <div class="line"></div>
-                                    <h4>말레피센트 (MALEFICENT)</h4>
-                                    <p class="name">안젤리나 졸리 (Angelina Jolie)</p>
-                                    <p class="descript">커다란 날개를 가진 무어스의 수호자.<br>&nbsp;</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="charactercon">
-                        <div class="characterimg-w">
-                            <img src="img/queen.jpg" alt="잉그리스왕비">
-                        </div>
-                        <div class="characterimg-m">
-                            <img src="img/queenm.jpg" alt="잉그리스왕비">
-                        </div>
-                        <div class="c-info">
-                            <div class="c-infobg">
-                                <div class="infocon">
-                                    <blockquote>“훌륭한 지도자가<br>되려면 뭘 갖춰야<br>할 것 같니?”</blockquote>
-                                    <div class="line"></div>
-                                    <h4>잉그리스 왕비 (Queen Ingrith)</h4>
-                                    <p class="name">미셸 파이퍼 (Michelle Pfeiffer)</p>
-                                    <p class="descript">요정을 말살하고<br>인간의 왕국을 지배하려는 교활한 인물.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="charactercon">
-                        <div class="characterimg-w">
-                            <img src="img/aurora.jpg" alt="오로라">
-                        </div>
-                        <div class="characterimg-m">
-                            <img src="img/auroram.jpg" alt="오로라">
-                        </div>
-                        <div class="c-info">
-                            <div class="c-infobg">
-                                <div class="infocon">
-                                    <blockquote>“난 당신을 알아요.<br>잘 알아요.<br>내 어머니잖아요.”</blockquote>
-                                    <div class="line"></div>
-                                    <h4>오로라 (Frincess Aurora)</h4>
-                                    <p class="name">엘 패닝 (Elle Fanning)</p>
-                                    <p class="descript">말레피센트를 어머니처럼<br>따르는 착하고 용감한 숲의 여왕.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="charactercon">
-                        <div class="characterimg-w">
-                            <img src="img/conall.jpg" alt="코널">
-                        </div>
-                        <div class="characterimg-m">
-                            <img src="img/conallm.jpg" alt="코널">
-                        </div>
-                        <div class="c-info">
-                            <div class="c-infobg">
-                                <div class="infocon">
-                                    <blockquote>“넌 너무<br>오랫동안 인간에게<br>마음을 줬어"</blockquote>
-                                    <div class="line"></div>
-                                    <h4>코넬 (Conall)</h4>
-                                    <p class="name">추이텔 에지오포 (Chiwetel Ejiofor)</p>
-                                    <p class="descript">다크페이의 수장이자<br>다크페이 내 비둘기파의 중심 인물.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--갤러리-->
-            <div id="gallery">
-                <div class="maleimg"><img src="img/maleimg.png" alt="말레피센트 뿔"></div>
-                <h2>GALLERY</h2>
-                <div class="gall">
-                    <div class="gallcon">
-                        <div class="gall1">
-                            <img src="img/gall1.jpg" alt="이미지1">
-                            <img src="img/gall2.jpg" alt="이미지2">
-                            <img src="img/gall3.jpg" alt="이미지3">
-                        </div>
-                        <div class="gall2">
-                            <img src="img/gall4.jpg" alt="이미지4">
-                            <img src="img/gall5.jpg" alt="이미지5">
-                            <img src="img/gall6.jpg" alt="이미지6">
-                        </div>
-                        <div class="gall3">
-                            <img src="img/gall7.jpg" alt="이미지7">
-                            <img src="img/gall8.jpg" alt="이미지8">
-                            <img src="img/gall9.jpg" alt="이미지9">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="gall4">
-                            <img src="img/gall10.jpg" alt="이미지10">
-                            <img src="img/gall11.jpg" alt="이미지11">
-                            <img src="img/gall12.jpg" alt="이미지12">
-                        </div>
-                    </div>
-                    <div class="m-gallcon">
-                        <img src="img/gall1.jpg" alt="이미지1">
-                        <img src="img/gall2.jpg" alt="이미지2">
-                        <img src="img/gall3.jpg" alt="이미지3">
-                        <img src="img/gall4.jpg" alt="이미지4">
-                        <img src="img/gall5.jpg" alt="이미지5">
-                        <img src="img/gall6.jpg" alt="이미지6">
-                        <img src="img/gall7.jpg" alt="이미지7">
-                        <img src="img/gall8.jpg" alt="이미지8">
-                        <img src="img/gall9.jpg" alt="이미지9">
-                        <img src="img/gall10.jpg" alt="이미지10">
-                        <img src="img/gall11.jpg" alt="이미지11">
-                        <img src="img/gall12.jpg" alt="이미지12">
-                    </div>
-                </div>
-                <button class="toggle-gall" id="toggle-gall">
-                    <span class="material-symbols-rounded">keyboard_arrow_down</span>
-                </button>
-            </div>
-            <div id="event">
-                <div class="maleimg"><img src="img/maleimg.png" alt="말레피센트 뿔"></div>
-                <h2>EVENT</h2>
-                <div class="eventcon">
-                    <div class="con1">
-                        <div class="eventtext">
-                            <p class="day">2019. 10. 17 ~ 10. 31</p>
-                            <h5>10,000원 할인 쿠폰</h5>
-                            <p class="coupontext">할인 쿠폰 다운받으면, ‘말레피센트 2'<br class="mobile"> 예매 시 선착순 2,000명까지 10,000원에 예매할 수 있어요!</p>
-                        </div>
-                        <div class="eventnext">
-                            <li><a href="#">CGV<span class="material-symbols-rounded">arrow_forward_ios</span></a></li>
-                            <li><a href="#">롯데시네마<span class="material-symbols-rounded">arrow_forward_ios</span></a></li>
-                            <li><a href="#">메가박스<span class="material-symbols-rounded">arrow_forward_ios</span></a></li>
-                        </div>
-                    </div>
-                    <div class="con2">
-                        <div class="eventtext">
-                            <p class="day">2019. 10. 17 ~ 10. 31</p>
-                            <h5>1+1 예매권 쿠폰</h5>
-                            <p class="coupontext">예매권 쿠폰 다운받으면, ‘말레피센트 2' 예매 시<br class="mobile"> 선착순 1,000명까지 1+1으로 예매할 수 있어요!</p>
-                        </div>
-                        <div class="eventnext">
-                            <li><a href="#">CGV<span class="material-symbols-rounded">arrow_forward_ios</span></a></li>
-                            <li><a href="#">롯데시네마<span class="material-symbols-rounded">arrow_forward_ios</span></a></li>
-                            <li><a href="#">메가박스<span class="material-symbols-rounded">arrow_forward_ios</span></a></li>
-                        </div>
-                    </div>
-                    <div class="eventnoice">
-                        <h6>알려드립니다!</h6>
-                        <p>
-                            본 이벤트는 10월 10일(목) 09:00~ 부터 가능합니다.
-                            <br>본 이벤트는 1인 1매씩 가능합니다.
-                            <br>이벤트 기간 동안 이벤트 페이지 내에서 다운로드 후, 각 영화관 홈페이지, 모바일 웹, 앱에서 적용 및 예매 가능합니다.
-                            <br>쿠폰을 다운로드 받으셨더라도, 최종 결제 시점에 사용가능수량이 마감될 경우 쿠폰 사용이 불가합니다.
-                            <br>동시 예매로 선착순 인원이 마감될 경우 결제 진행이 어려울 수 있습니다.
-                            <br>본 쿠폰으로  예매완료 후, 취소 재예매하실 경우에는 동시 예매로 선착순 인원이 마감되어 결제 진행이 어려울 수 있습니다.
-                            <br>사용가능수량 마감시 쿠폰 다운로드 및 예매 불가하며, 이벤트 기간 내 예매 취소하여 사용수량이 변경될 경우 쿠폰 다운로드 및 예매 가능합니다.
-                            <br>성인 티켓 및 8천원 이상의 티켓에 적용 가능하며, 청소년 및 우대는 적용이 불가합니다.
-                            <br>본 쿠폰은 조조, 심야, 문화의 날, 무대인사는 사용이 불가합니다.
-                            <br>특가 및 할인 이벤트 진행하는 일부 지점에서 사용이 불가할 수 있습니다.
+        <div class="main">
+            <div class="mainbox">
+                <span class="maintext">언어불통</span>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script> 
+                <script src="mainjava.js"></script>
+                <div class="mainbtn">
+                    <button class="maingo">
+                        <a href="main.html">
+                            <span class="mtext"><p>언어불통</p></span>
+                            <span class="material-symbols-rounded">keyboard_arrow_right</span>
+                        </a>
+                    </button>
+                    <button class="projectgo_con">
+                        <span class="projectgo"><p>기획 설명</p></span>
+                        <span class="material-symbols-rounded">keyboard_arrow_down</span>
+                    </button>
+                </div>            
+                <div class="inside">
+                    <div class="project_intro">
+                        <h1 class="project_title">기획의도</h1>
+                        <p class="project_con">
+                        최근 인터넷에서 젊은 층을 중심으로 ‘심심한 사과’, ‘무료하다’, ‘연세’ 등의 한자어를 모르는,
+                        <br>세대 간 언어 소통 문제가 논란이 되었고, 다양한 형태의 뉴미디어의 등장으로 인해 정보 습득 방법,
+                        <br>현저히 떨어지는 독서량 등의 문제를 가져왔다. 한자어의 필요성을 느끼지 못하는 젊은 층을
+                        <br>중심으로 문해력이 심각한 문제로 대두되어 있어 이를 인지할 필요가 있다.
+                        <br>
+                        <br><span style="color: #06da0d; font-weight: bold;">&lt;&lt;언어불통&gt;&gt;</span> 프로젝트에서는 어휘력 퀴즈인 '맞추다'와 책 추천 '학습하다'를 통해, 
+                        <br>젊은 층이 잘 모르는 단어에 더 친숙하게 접근하고자 한다. 
                         </p>
                     </div>
-                </div>
-            </div>
-            <div id="soundtrack">
-                <div class="trackbg">
-                    <img src="img/soundtrack.jpg" alt="사운드트랙배경">
-                </div>
-                <div class="maleimg"><img src="img/maleimg.png" alt="말레피센트 뿔"></div>
-                <h2>SOUND TRACK</h2>
-
-                <div class="soundtrack-con">
-                    <div class="musiccon">
-                        <div class="player">
-                            <div class="album">
-                                <img src="img/album.jpg" alt="앨범 커버">
+                    <div class="project_next"><img src="img/next_pic.png"></div>
+                    <div class="project_test_fin">
+                        <h1 class="project_title">문해력 실험 설문조사 결과</h1>
+                        <p class="projcet_title2">(기간  :  2021년 2월 13일 - 3월 13일 / 대상 : 성인 883명 / 단위 : %)</p>
+                        <div class="project_test">
+                            <div class="project_test_pic">
+                                <div class="projectpic"><img src="img/project_pic1.png"></div>
+                                <div class="projectpic"><img src="img/project_pic2.png"></div>
                             </div>
-
-                                <button id="play-btn"><span class="material-symbols-rounded">play_arrow</span></button>
-                        </div>
-                        <div class="trackinfo">
-                            <div class="track-title">
-                                Mistress of Evil
+                            <div class="project_test_pic">
+                                <div class="projectpic"><img src="img/project_pic3.png"></div>
+                                <div class="projectpic"><img src="img/project_pic4.png"></div>
                             </div>
-                            <div class="track-artist">
-                                제프 자넬리
-                            </div>
-                        </div>
-                        <audio id="audio-player" src="mp3/track1.mp3"></audio>
+                        </div> 
                     </div>
-    
-                    <div class="tracklist">
-                        <ul id="track-list">
-                            <li data-src="mp3/track1.mp3" data-title="Mistress of Evil" data-artist="제프 자넬리">Mistress of Evil <span>1:34</span></li>
-                            <li data-src="mp3/track2.mp3" data-title="Poachers on the Moors" data-artist="제프 자넬리">Poachers on the Moors<span>4:25</span></li>
-                            <li data-src="" data-title="What is Going on Here?" data-artist="제프 자넬리">What is Going on Here?<span>4:32</span></li>
-                            <li data-src="" data-title="Ulstead" data-artist="제프 자넬리">Ulstead<span>2:40</span></li>
-                            <li data-src="" data-title="Etiquette Lessons" data-artist="제프 자넬리">Etiquette Lessons<span>2:06</span></li>
-                            <li data-src="" data-title="All He Wanted Was Peace" data-artist="제프 자넬리">All He Wanted Was Peace<span>4:51</span></li>
-                            <li data-src="" data-title="We have Her" data-artist="제프 자넬리">We have Her<span>3:50</span></li>
-                            <li data-src="" data-title="We’re Dark Fey" data-artist="제프 자넬리">We’re Dark Fey<span>3:54</span></li>
-                            <li data-src="" data-title="Pinto’s Recon Mission" data-artist="제프 자넬리">Pinto’s Recon Mission<span>1:53</span></li>
-                            <li data-src="" data-title="It is Love That Will Heal You" data-artist="제프 자넬리">It is Love That Will Heal You<span>2:08</span></li>
-    
-                            <li class="hidden" data-src="" data-title="Origin Story" data-artist="제프 자넬리">Origin Story<span>2:08</span></li>
-                            <li class="hidden" data-src="" data-title="You Don't Have to Change" data-artist="제프 자넬리">You Don't Have to Change<span>2:02</span></li>
-                            <li class="hidden" data-src="" data-title="The Dance of the Fey" data-artist="제프 자넬리">The Dance of the Fey<span>2:12</span></li>
-                            <li class="hidden" data-src="" data-title="Back to the Moors" data-artist="제프 자넬리">Back to the Moors<span>1:15</span></li>
-                            <li class="hidden" data-src="" data-title="Our Fight Begins Now!" data-artist="제프 자넬리">Our Fight Begins Now!<span>1:46</span></li>
-                            <div class="overlay-track"></div>
-                        </ul>
-                        <button id="more-btn"><span class="material-symbols-rounded">keyboard_arrow_down</span></button>
-                    </div>    
+                    <p class="project_fin">
+                        상단의 그래프는 2021년, TV에서 방영한 ‘EBS 당신의 문해력’ 중 성인 2030세대 883명을 대상으로 설문 조사를 진행한 결과이다.
+                        <br>어휘력과 문해력 실태를 확인하고자 시행한 실험 결과에 따르면 응시자들은 11문제 중 평균 6개 정도의 정답을 맞췄고,
+                        <br>이들의 종합적인 평균 점수는 54점으로 집계되었다. 이들 중 글을 읽고 '의견 작성시 어려움을 느낀 적이 있다'에
+                        <br>72.6%가 '그런적이 있다'고 대답했고 '사회 생활시 문해력이 필요하다'에 87.9%로 가장 많은 사람들이 '그렇다'라고 대답했다.
+                        <br>30.7%의 응시자들이 '일상소통 불가'로 인해 '문해력이 필요하다'고 말했고, '문해력 향상'에 독서가 가장 필요한 것으로는 나타났다.
+                        <br>
+                        <br>이에 따라, 현대인의 어휘력에 문제가 있음을 알리고 부족한 어휘력의 심각성을 알리고자 한다. 
+                    </p>
                 </div>
             </div>
         </div>
-
-        <div class="notice_port">본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.<br>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝혀 드립니다.</div>
+        <div class="notice_port">본 사이트는 개인 포트폴리오 사이트로 제작되어 상업적 목적이 아닙니다.</div>
 
     </div>
 
     <script>
-window.addEventListener("load", function () {
-  // 해시 제거 후 맨 위로 이동
-  history.replaceState(null, null, " ");
-  window.scrollTo(0, 0);
-});
-
-        //메뉴
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.getElementById("menu-toggle");
-            const mobileMenu = document.getElementById("menucon");
-            const menuLinks = document.querySelectorAll("menucon > a");
-
-            // 메뉴 열고 닫기
-            menuToggle.addEventListener("click", function () {
-                this.classList.toggle("active"); // 버튼 애니메이션
-                mobileMenu.classList.toggle("active"); // 메뉴 열기 닫기
-            });
-
-            // 클릭 메뉴 닫기1 (내)
-            menuLinks.forEach(link => {
-                link.addEventListener("click", function () {
-                    menuToggle.classList.remove("active"); // 햄버거 버튼 원래대로
-                    mobileMenu.classList.remove("active"); // 메뉴 닫기
-                });
-            });
-
-            // 클릭 메뉴 닫기2 (외)
-            document.addEventListener("click", function (event) {
-                const isClickInsideMenu = mobileMenu.contains(event.target);
-                const isClickOnToggle = menuToggle.contains(event.target);
-                if (!isClickInsideMenu && !isClickOnToggle) {
-                    menuToggle.classList.remove("active");
-                    mobileMenu.classList.remove("active");
+        $(document).ready(function(){
+            // 버튼 클릭 시 동작
+            $('.material-symbols-rounded').click(function(){
+                var inside = $('.inside');
+                var mainbox = $('.mainbox');
+                var maintext = $('.maintext');
+                
+                if (inside.is(':visible')) {
+                    // 'inside' 숨기기
+                    inside.slideUp();
+                    maintext.fadeIn(); // maintext 다시 보이게
+                    $(this).text('expand_more');
+                } else {
+                    // 'inside' 보이기
+                    inside.slideDown();
+                    maintext.fadeOut(); // maintext 숨기기
+                    $(this).text('expand_less');
                 }
             });
         });
 
-        //갤러리
-        document.getElementById("toggle-gall").addEventListener("click", function() {
-            const gallery = document.querySelector(".gall");
-            const icon = document.querySelector("#toggle-gall span");
-            gallery.classList.toggle("expanded");
-            if (gallery.classList.contains("expanded")) {
-                icon.textContent = "keyboard_arrow_up";
-            } else {
-                icon.textContent = "keyboard_arrow_down";
-            }
-        });
-
-        //사운드 트랙
-        const playPauseBtn = document.getElementById("play-btn");
-        const audioPlayer = document.getElementById("audio-player");
-
-        let isPlaying = false;
-
-        playPauseBtn.addEventListener("click", () => {
-        if (!isPlaying) {
-        audioPlayer.play();
-        isPlaying = true;
-        // 일시정지 아이콘 변경
-        playPauseBtn.innerHTML = '<span class="material-symbols-rounded">pause</span>';
-        } else {
-        // 일시정지
-        audioPlayer.pause();
-        isPlaying = false;
-        // 플레이 아이콘 변경
-        playPauseBtn.innerHTML = '<span class="material-symbols-rounded">play_arrow</span>';
-        }
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-        const trackListItems = document.querySelectorAll("#track-list li");
-        const trackTitleEl = document.querySelector(".track-title");
-        const trackArtistEl = document.querySelector(".track-artist");
-        const audioPlayer = document.getElementById("audio-player");
-        const playPauseBtn = document.getElementById("play-btn");
-
-        let isPlaying = false;
-
-        trackListItems.forEach((item) => {
-            item.addEventListener("click", () => {
-            trackListItems.forEach(li => li.classList.remove("active"));
-            item.classList.add("active");
-
-            // 노래 파일, 제목, 이름
-            const newSrc = item.getAttribute("data-src");
-            const newTitle = item.getAttribute("data-title");
-            const newArtist = item.getAttribute("data-artist");
-
-            // 노래 변경 후 재생
-            if (newSrc) {
-                audioPlayer.src = newSrc;
-                audioPlayer.play().then(() => {
-                isPlaying = true;
-                // 플레이 버튼 변경
-                playPauseBtn.innerHTML = '<span class="material-symbols-rounded">pause</span>';
-            }).catch((error) => {
-                console.error("오디오 재생 오류:", error);
-                });
-            } else {
-                console.error("data-src 속성이 비어있습니다.");
-            }
-
-            // 곡 정보 업뎃
-            if (trackTitleEl) {
-                trackTitleEl.textContent = newTitle || ".track-title";
-            }
-            if (trackArtistEl) {
-                trackArtistEl.textContent = newArtist || "Unknown Artist";
-            }
-            });
-            });
-        });
-
-        //트랙리스트 더보기 버튼
-        document.getElementById("more-btn").addEventListener("click", function() {
-            const tracklist = document.querySelector("#track-list ");
-            const icon = document.querySelector("#more-btn span");
-            tracklist.classList.toggle("expanded");
-            if (tracklist.classList.contains("expanded")) {
-                icon.textContent = "keyboard_arrow_up";
-            } else {
-                icon.textContent = "keyboard_arrow_down";
-            }
-        });
     </script>
-</body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js'></script>
+</body>  
 </html>
