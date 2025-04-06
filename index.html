@@ -307,12 +307,11 @@
     </div>
 
     <script>
-        window.addEventListener("load", function () {
-            setTimeout(function () {
-                history.replaceState(null, null, " ");
-                window.scrollTo(0, 0);
-            }, 10);
-        });
+window.addEventListener("load", function () {
+  // 해시 제거 후 맨 위로 이동
+  history.replaceState(null, null, " ");
+  window.scrollTo(0, 0);
+});
 
         //메뉴
         document.addEventListener("DOMContentLoaded", function () {
