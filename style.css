@@ -2,8 +2,11 @@
     font-family: 'hahmlet-bold';
     src: url('font/Hahmlet-Bold.ttf') format('truetype');
 }
-/*@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
-*/
+@font-face {
+    font-family: 'hahmlet-m';
+    src: url('font/Hahmlet-Medium.ttf') format('truetype');
+}
+
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -11,12 +14,6 @@
     font-style: normal;
 }
 
-.hahmlet {
-  font-family: "Hahmlet", serif;
-  font-optical-sizing: auto;
-  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-  font-style: normal;
-}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -42,14 +39,18 @@ img {
 button {
     cursor: pointer;
 }
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
 body {
     background: #030303;
     color: #ffffff;
     position: relative;
     width: 100vw;
     -ms-overflow-style: none;
-    font-family: 'Pretendard';
-    font-size: 16px;
+    font-family: 'Pretendard-Regular';
 }
 
 .main {
@@ -144,7 +145,7 @@ body {
 
 }
 .mtext > p, .projectgo > p {
-    font-family: 'Hahmlet-bold';
+    font-family: 'hahmlet-bold';
     font-weight: 100;
     font-size: 19px;
     line-height: 10px;
@@ -359,7 +360,6 @@ header {
     text-align: center;
     font-size: 34px;
     font-family: 'hahmlet-bold';
-    font-weight: 700;
     letter-spacing: 6.8px;
     line-height: 76px;
     color: #646464;
@@ -488,7 +488,7 @@ header {
 }
 .newstype2 {
     font-size: 14px;
-    font-family: 'Hahmlet';
+    font-family: 'hahmlet-m';
     color: #00ff08;
     margin-top: 15px;
 }
@@ -585,7 +585,7 @@ header {
     border-radius: 80px;
     font-size: 20px;
     border: 2px solid #00ff08;
-    font-family: 'Hahmlet';
+    font-family: 'hahmlet-bold';
     letter-spacing: 2px;
 
 }
@@ -679,10 +679,8 @@ header {
 .result {
     padding-bottom: 18px;
     font-size: 20px;
-    font-weight: bold;
     text-align: left;
-
-    font-family: 'Hahmlet';
+    font-family: 'hahmlet-bold';
 }
 .result_box {
 
@@ -781,7 +779,7 @@ header {
     left: 0;
     width: 90px;
     height: 100%;
-    font-family: 'Hahmlet';
+    font-family: 'hahmlet-bold';
     font-size: 20px;
     line-height: 90px;
     writing-mode: vertical-rl;
@@ -793,8 +791,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 10px;
-    font-family: "Hahmlet", serif;
-    font-weight: 500;
+    font-family: "hahmlet-m";
     font-size: 15px;
     line-height: 90px;
     writing-mode: vertical-rl;
@@ -846,7 +843,7 @@ header {
 }
 .booktitle2 {
     display: flex;
-    font-family: 'Hahmlet';
+    font-family: 'hahmlet-bold';
     align-items: end;
 }
 .btitle {
