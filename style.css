@@ -886,7 +886,6 @@ header {
     bottom: 0;
     line-height: 20px;
     width: 100%;
-    background: #ff3434bd;
-    border: 1px rgba(255, 50, 50, 0.741);
+    background: #030303b1;
     text-align: center;
 }
